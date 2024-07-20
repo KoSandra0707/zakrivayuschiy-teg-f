@@ -5,50 +5,59 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
+
 :root.theme-light {
-    --bg-color: #fff;
-    --accent-color: #000;
-    --main-font: "Inter-Variable", Courie, Arial, sans-serif;
-    --accent-font: "PressStrart2P";
-    --font-size: 18px;
-    --title-font-weight: 700;
-    --text-font-weight: 400;
-    --bg-image: repeating-linear-gradient( #d3d3d3 0px 2px, rgb(211 211 211/0) 2px 4px), 
-    repeating-linear-gradient(90deg, #d3d3d3 0px 2px, rgb(211 211 211/0) 2px 4px),
-    linear-gradient(#E7E7E7 0.01%, #1A1A1A);
-    --watermark-color: #fff;
-    --like-color: #f00000;
-    --bn-color: #fff;
-}
-
-:root.theme-dark {
-    --bg-color: #000;
-    --accent-color: #00CC14;
-    --main-font: "Inter-Variable", Courie, Arial, sans-serif;
-    --accent-font: "PressStrart2P";
-    --font-size: 18px;
-    --title-font-weight: 785;
-    --text-font-weight: 465;
-    --bg-image: repeating-linear-gradient(#000 0px 2px, rgb(0 0 0/0) 2px 4px),
-    repeating-linear-gradient(90deg, #000 0px 2px, rgb(0 0 0/0) 2px 4px), linear-gradient(#007F0C, #004306);
-    --watermark-color: #000;
-    --like-color: #f00000;
-    --bn-color: var(--accent-color);
-}
-
-@media (prefers-color-scheme: dark) {
+    --font-weight-title: 700;
+    --font-weight-text: 400;
+    --br-color: #FFFFFF;
+    --main-color: #000000;
+    --mix-color: #FFFFFF;
+    --br-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --contour-color: #000;
+    /*--core-color: #ffffff;*/
+  }
+  
+  :root.theme-dark {
+    --font-weight-title: 785;
+    --font-weight-text: 465;
+    --br-color: #000000;
+    --main-color: #00CC14;
+    --mix-color: #00CC14;
+    --br-gradient: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), 
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), 
+    repeating-linear-gradient(to bottom, #007f0c, #004306);
+    --contour-color: #00CC14;
+    /*--core-color: #000000;*/
+  }
+  
+  @media (prefers-color-scheme:light) {
     :root {
-        --accent-color: #00CC14;
-        --bg-color: #000;
-        --main-font: "Inter-Variable", Courie, Arial, sans-serif;
-        --accent-font: "PressStrart2P";
-        --font-size: 18px;
-        --title-font-weight: 785;
-        --text-font-weight: 465;
-        --bg-image: repeating-linear-gradient(#000 0px 2px, rgb(0 0 0/0) 2px 4px),
-        repeating-linear-gradient(90deg, #000 0px 2px, rgb(0 0 0/0) 2px 4px), linear-gradient(#007F0C, #004306);
-        --watermark-color: #000;
-        --like-color: #f00000;
-        --bn-color: var(--accent-color);
+      --font-weight-title: 700;
+      --font-weight-text: 400;
+      --br-color: #FFFFFF;
+      --main-color: #000000;
+      --mix-color: #FFFFFF;
+      --br-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+      --contour-color: #000;
+      /*--core-color: #ffffff;*/
     }
-}
+  }
+  
+  @media (prefers-color-scheme:dark) {
+    :root {
+    --font-weight-title: 785;
+    --font-weight-text: 465;
+    --br-color: #000000;
+    --main-color: #00CC14;
+    --mix-color: #00CC14;
+    --br-gradient: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), 
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), 
+    repeating-linear-gradient(to bottom, #007f0c, #004306);
+    --contour-color: #00CC14;
+    /*--core-color: #000000;*/
+    }
+  }
