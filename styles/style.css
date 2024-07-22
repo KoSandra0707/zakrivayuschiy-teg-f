@@ -198,7 +198,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 2px;
+  gap: 7px;
 }
 
 .button__text {
@@ -251,12 +251,13 @@
 
 
 .card__icon-button {
-  padding-right: 5px;
+  padding: 0px;
   background: transparent;
   cursor: pointer;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 33px;
   border: none;
   outline: 2px solid transparent;
@@ -380,7 +381,7 @@
 }
 
 dialog::backdrop {
-  background-color: var(--main-color);
+  background-color: #000;
   opacity: 75%;
 }
 
@@ -460,26 +461,23 @@ dialog::backdrop {
   }
 
   .button-icon {
-    width: 21px;
-    height: 21px;
+    width: 39px;
+    height: 36px;
   }
 
   .footer__button {
     flex-direction: row;
   }
 
-  .dialog {
-    max-width: 357px;
+  .dialog[open] {
     min-height: 193px;
-  }
-
-  .dialog__container {
-    max-width: 293px;
-    height: 63px;
+    min-width: 357px;
+    padding: 30px;
   }
 
   .dialog__button {
-    width: 100%;
+    width: 293px;
     height: 38px;
   }
+
 }
